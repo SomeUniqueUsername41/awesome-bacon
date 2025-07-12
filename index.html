@@ -56,6 +56,9 @@
       <option value="9">number ending in 9</option>
       <option value="8">number ending in 8</option>
       <option value="6">number ending in 6</option>
+      <option value="5">number ending in 5</option>
+      <option value="4">number ending in 4</option>
+      <option value="3">number ending in 3</option>
     </select>
 
     <button onclick="calculateYearEnding()">Calculate</button>
@@ -72,7 +75,6 @@
         return;
       }
 
-      // Use a fixed number ending in the selected digit, e.g., 79, 78, or 76
       var subtractAmount = 10 + endingDigit;
       var resultYear = year - subtractAmount;
       var lastDigit = resultYear % 10;
